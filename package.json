@@ -1,0 +1,28 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "\"# NaruGameAPI\"",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oppaidive/NaruGameAPI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oppaidive/NaruGameAPI/issues"
+  },
+  "homepage": "https://github.com/oppaidive/NaruGameAPI#readme",
+  "dependencies": {
+    "argon2-ffi": "^2.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
