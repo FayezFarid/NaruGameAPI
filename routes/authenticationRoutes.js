@@ -7,9 +7,9 @@ module.exports = app => {
 	// routes
 	app.post('/auth/login', async (req, res) => {
 		console.log("auth method");
-		/*	const { REusername, REpassword } = req.body;*/
-		REusername = req.body.REusername;
-		REpassword = req.body.REpassword;
+			const { REusername, REpassword } = req.body;
+		//REusername = req.body.REusername;
+		//	REpassword = req.body.REpassword;
 		if (REusername == null || REpassword == null) {
 			res.send("Empty ");
 			return;
@@ -20,6 +20,7 @@ module.exports = app => {
 			if(success){
 				userAccount.lastAuhentication=Date.now();
 				await userAccount.save();
+				req.session.userAccount=userAccount;
 				res.send(userAccount);
 				return
 			}

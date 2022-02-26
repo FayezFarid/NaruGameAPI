@@ -20,6 +20,7 @@
   "dependencies": {
     "argon2-ffi": "^2.0.0",
     "express": "^4.17.3",
+    "express-session": "^1.17.2",
     "mongoose": "^6.2.2"
   },
   "devDependencies": {

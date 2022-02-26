@@ -5,6 +5,10 @@ const accountSchema = new Schema({
     password: String,
     salt: String,
     lastAuhentication: Date,
+    Userstats:{
+        ad: Number,
+        ap: Number,
+        def_ad: Number,
+    }
 });
-
 mongoose.model("accounts", accountSchema);
